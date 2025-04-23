@@ -1,5 +1,7 @@
+set CURRENT_DRIVE=%~d0
+
 call start /B c:\dbgview.exe
-copy e:\main.sys c:\main.sys
+copy %CURRENT_DRIVE%\main.sys c:\main.sys
 
 c:\sleep.exe 10
 
